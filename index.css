@@ -1,6 +1,13 @@
 .app {
-    background-color: rgb(255, 125, 255);
+    background-color:#ffc3e1;
 }
 .title {
-    color:rgb(126, 0, 119);
+    color:rgb(255, 0, 191);
+}
+.choices button {
+    background-color: #ee99ee; /* pink background */
+    border: 1px solid rgb(255, 0, 191); /* Green border */
+    color: rgb(0, 0, 0); /* black text */
+    padding: 10px 24px; 
+    cursor: pointer; 
 }
