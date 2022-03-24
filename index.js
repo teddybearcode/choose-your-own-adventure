@@ -4,7 +4,11 @@ function button1() {
 
     let scene = document.querySelector('#js-scene');
     scene.innerHTML = "<p>you clicked Button 1</p>";
+    
+    
     lastButtonClicked = "1";
+
+    
 }
 function button2() {
    console.log("button2");
