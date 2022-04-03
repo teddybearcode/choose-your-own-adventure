@@ -1,38 +1,34 @@
-let lastButtonClicked;
-function button1() {
-    console.log("button1");
+let question = {
+    questionText: "what is 2 x 2?",
+    answer1: "2",
+    answer2: "4",
+    correct: "answer2",
+}
 
-    let scene = document.querySelector('#js-scene');
-    scene.innerHTML = "<p>you clicked Button 1</p>";
+let text = document.querySelector('#js-scene');
+let answer1 = document.querySelector('#js-answer1');
+let answer2 = document.querySelector('#js-answer2');
+
+
+text.innerHTML = question.questionText;
+answer1.innerHTML = question.answer1;
+answer2.innerHTML = question.answer2;
+
+
+
+function button1() {
+    if (question.correct == "answer1") {
+        text.innerHTML = "correct"
+    } 
+    else{
+        text.innerHTML = "incorrect"
+    }    
 }
 function button2() {
-    console.log("button2");
-
-    // let scene = document.querySelector('#js-scene');
-    //scene.innerHTML = "<p>you clicked Button 2</p>"
-
-
-    let answer1 = prompt("how are you?");
-    if (answer1 == 'good') {
-        let scene = document.querySelector('#js-scene');
-        scene.innerHTML = "<p>amazing</p>"
+    if (question.correct == "answer2"){
+        text.innerHTML = "correct"
     }
-
-    if (answer1 == 'bad') {
-        let scene = document.querySelector('#js-scene');
-        scene.innerHTML = "<p>oh no!!!</p>"
-
+    else{
+        text.innerHTML = "incorrect"
     }
-}
-function button3() {
-    console.log("button3");
-
-    let scene = document.querySelector('#js-scene');
-    scene.innerHTML = "<p>you clicked Button 3</p>";
-}
-function button4() {
-    console.log("button4");
-
-    let scene = document.querySelector('#js-scene');
-    scene.innerHTML = "<p>you clicked Button 4</p>";
 }
